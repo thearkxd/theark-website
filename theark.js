@@ -4,7 +4,7 @@ const client = (global.client = _client);
 const express = require("express");
 const ejs = require("ejs");
 const app = express();
-app.listen(80);
+app.listen(3000 || process.env.PORT);
 
 client.login()
   .then(() => console.log("Giriş başarılı!"))
