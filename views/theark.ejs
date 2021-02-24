@@ -1,0 +1,82 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= theark.username %></title>
+  <link rel="shortcut icon" type="image/png" href="<%= theark.avatarURL() %>" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <link rel="stylesheet" href="css/main.css" />
+  <meta property="og:image" content="<%= theark.avatarURL({ dynamic: true }) %>" />
+  <meta name="description" content="<%= theark.tag %>" />
+</head>
+
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+
+  <div class="winter-is-coming">
+    <div class="snow snow--near"></div>
+    <div class="snow snow--near snow--alt"></div>
+
+    <div class="snow snow--mid"></div>
+    <div class="snow snow--mid snow--alt"></div>
+
+    <div class="snow snow--far"></div>
+    <div class="snow snow--far snow--alt"></div>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide first">
+        <img data-aos="fade-right" data-aos-delay="700" src="<%= theark.avatarURL({ dynamic: true, size: 2048 }) %>" />
+        <span class="scroll-down"></span>
+        <span data-aos="fade-up" data-aos-delay="700">
+          <h3><%= theark.username %><span class="purple">#<%= theark.discriminator %></span></h3>
+          <h5 class="cd-headline letters type">
+			      <span class="cd-words-wrapper waiting">
+				      <b class="is-visible">Discord Bot Developer</b>
+				      <b>Full Stack Web Developing Student</b>
+			      </span>
+		      </h5>
+          <h5 style="margin-bottom: 25px;"></h5>
+          <a class="button" href="https://discord.gg/UEPcFtytcc" target="_blank">Discord Server</a>
+        </span>
+      </div>
+
+      <div class="swiper-slide second">
+        <h1>Hakkımda / About Me</h1>
+        <h5 class="about">
+          Merhaba, ben Alper. 17 yaşında, kendi halinde bir yazılım
+          öğrencisiyim. Yaklaşık 1 yıl önce Discord botları geliştirerek
+          başladığım yazılım serüvenine Full Stack Web Developing öğrencisi
+          olarak devam ediyorum. Aktif olarak Javascript diline hakimim.
+        </h5>
+      </div>
+
+      <div class="swiper-slide third">
+        <h1>İletişim / Contact</h1>
+        <br>
+        <p align="center">
+          <a href="https://discord.com/users/350976460313329665" target="_blank"><img src="https://shields.io/badge/Theark-111111.svg?&style=for-the-badge&logo=discord"></a>
+          <a href="https://github.com/thearkxd" target="_blank"><img src="https://shields.io/badge/Theark-111111.svg?&style=for-the-badge&logo=github"></a>
+          <a href="https://www.npmjs.com/~theark" target="_blank"><img src="https://shields.io/badge/Theark-111111.svg?&style=for-the-badge&logo=npm"></a>
+          <a href="https://discord.gg/UEPcFtytcc" target="_blank"><img src="https://shields.io/badge/My Discord Server-111111.svg?&style=for-the-badge"></a>
+        </p>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/text.js"></script>
+  <script src="js/main.js"></script>
+</body>
